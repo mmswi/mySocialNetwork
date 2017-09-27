@@ -18,7 +18,8 @@ const userCtrl = (UsersModel) => {
         res.status(500).send(err)
       } else {
         // ADDING HATEOS
-        const allUsers = []
+        const allUsers = [{'name': 'user 1'}, {'name': 'user 2'}]
+        console.log('all users are ', allUsers)
         users.forEach((element) => {
           // adding links on the element, but not in the db
           let user = element.toJSON()

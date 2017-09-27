@@ -9,6 +9,8 @@ const usersRoutes = (usersModel) => {
   usersRouter.route('/')
     .get(usersCtrl.get)
     .post(usersCtrl.post)
+
+  return usersRouter
 }
 
 module.exports = usersRoutes
